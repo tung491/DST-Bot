@@ -4,7 +4,8 @@ My Facebook Messages bot
 ### Function
 
 ## [Main Bot]
-* Declined invitation when I was received a invitation to eat, drink and play game(All in bot_rep.py)
+* Declined invitation when I was received a invitation to eat, drink or play game(All in bot_rep.py)
+
 * Send good night wish to the people who I want wish(list that people in wish_id_user.py)
 
 ## [Clone Bot]
@@ -26,12 +27,13 @@ My Facebook Messages bot
 
 ### Authors
  ## Đỗ Sơn Tùng
-   * Nick: tung491
+   * Nickname: tung491
    * DOB: 2001 Sep 4 :virgo: 
    * From: Hà Nội, Vietnam
    * High school : Lê Quý Đôn- Đống Đa
    * Graduated PYMI course 1706
    * Facebook: https://www.facebook.com/eocan2
    * Email: dosontung007@gmail.com
+   * Project Euler: https://projecteuler.net/profile/dosontung007.png
    * Github: https://github.com/dosontung007
 
