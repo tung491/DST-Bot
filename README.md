@@ -10,7 +10,7 @@ My Facebook Messages bot
 
 ## [Clone Bot]
 * Send me 5 the most prominent posts(line 5-95 in getlink.py)
-  + **Existing sites**:
+  + **Supported web**:
     - [Tinh Tế](https://tinhte.vn/)
     - [GenK](http://genk.vn/)
     - [Kênh14](http://kenh14.vn/)
