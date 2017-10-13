@@ -1,2 +1,2 @@
 # DST-Bot
-My Facebook Messages Bot
+A Facebook Messages bot
