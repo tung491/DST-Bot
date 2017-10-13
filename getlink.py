@@ -31,7 +31,7 @@ def fml():
 
     x = soup.find_all('h3', class_="post-title entry-title")
 
-    link = x[0].find_all(href=True)['href']
+    link = x[0].find_all(href=True)[0]['href']
     title = x[0].get_text()
 
     return (title, link)

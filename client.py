@@ -66,7 +66,9 @@ class Clone_Bot(Client):
 
     def onMessage(self, author_id, message, thread_id, thread_type, **kwargs):
         if author_id != self.uid:
-            if message.lower() == 'tinhte':
+            message = message.lower()
+
+            if message == 'tinhte':
                 title_n_link, url_src = getlink.tinhte()
                 self.sendMessage('5 bài nổi bật trên Tinhte.vn',
                                  thread_id=thread_id,
@@ -82,7 +84,7 @@ class Clone_Bot(Client):
                                      thread_id=thread_id,
                                      thread_type=thread_type)
 
-            if message.lower() == 'pornhub':
+            if message == 'pornhub':
                 title_n_link, url_src = getlink.pornhub()
                 self.sendMessage('5 bộ phim nổi bật trên pornohub.su',
                                  thread_id=thread_id,
@@ -100,8 +102,8 @@ class Clone_Bot(Client):
                                      thread_id=thread_id,
                                      thread_type=thread_type)
 
-            if message.lower() == 'pe':
-                num_n_content = getlink.PE(message.lower())
+            if message == 'pe':
+                num_n_content = getlink.PE()
 
                 self.sendMessage('Problem ' + str(num_n_content[0]),
                                  thread_id=thread_id,
@@ -111,7 +113,7 @@ class Clone_Bot(Client):
                                  thread_id=thread_id,
                                  thread_type=thread_type)
 
-            if message.lower() == 'fml':
+            if message == 'fml':
                 title_n_link = getlink.fml()
                 msg_rep = str(title_n_link[0]) + '\n' + str(title_n_link[1])
 
@@ -122,7 +124,7 @@ class Clone_Bot(Client):
                                  thread_id=thread_id,
                                  thread_type=thread_type)
 
-            if message.lower() == 'kenh14':
+            if message == 'kenh14':
                 title_n_link, url_src = getlink.kenh14()
 
                 self.sendMessage('5 bài viết nổi bật trên kênh14',
@@ -142,7 +144,7 @@ class Clone_Bot(Client):
                                      thread_id=thread_id,
                                      thread_type=thread_type)
 
-            if message.lower() == 'genk':
+            if message == 'genk':
                 title_n_link, url_src = getlink.genk()
 
                 self.sendMessage('5 bài viết nổi bật trên Genk.vn',
@@ -162,7 +164,7 @@ class Clone_Bot(Client):
                                      thread_id=thread_id,
                                      thread_type=thread_type)
 
-            if message.lower() == 'xkcd':
+            if message == 'xkcd':
                 data = getlink.xkcd()
 
                 self.sendMessage('Bài viết mới nhất trên xkcd.com',
@@ -178,19 +180,16 @@ class Clone_Bot(Client):
                                  thread_id=thread_id,
                                  thread_type=thread_type)
 
-            if author_id != self.uid:
-                if message.lower() == 'good night':
-                    Main_Bot.good_night()
+            if message == 'good night':
+                Main_Bot.good_night()
 
-            if author_id != self.uid:
-                for key_word in ['tkb', 'thời khóa biểu']:
-                    if message.lower() == key_word:
-                        if key_word in message.lower():
-                            rep_message_ = bot_time_table.rep_message(message)
+            
+            if 'tkb' in message or 'Thời khóa biểu' in message:
+                rep_message_ = bot_time_table.rep_message(message)
 
-                            self.sendMessage(rep_message_,
-                                             thread_id=thread_id,
-                                             thread_type=thread_type)
+                self.sendMessage(rep_message_,
+                                    thread_id=thread_id,
+                                    thread_type=thread_type)
 
 
 def run_main_bot():
@@ -200,7 +199,7 @@ def run_main_bot():
 
 
 def run_clone_bot():
-    clone_client = Clone_Bot(login_clone_acc.user_name,
+    clone_client = Clone_Bot(login_clone_acc.username,
                              login_clone_acc.password)
     clone_client.listen()
 

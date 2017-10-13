@@ -57,7 +57,7 @@ def rep_msg(message):
                       'tôm', 'ngô', 'cơm', 'lẩu', 'khoai', 'sushi',
                       'chè', 'cháo', 'bún', 'chiên', 'xào', 'nướng', 'rán',
                       'chiên', 'súp', 'nem', 'xúc xích', 'hotdog',
-                      'phô mai', 'pho mai', 'kho'
+                      'phô mai', 'pho mai'
                       ]
 
     for i in lst_food_place:
@@ -70,11 +70,11 @@ def rep_msg(message):
             return random.choice(msg_rep)
             break
 
-    lst_hang_loose_place = ['xp', 'phim', 'rạp', 'cgv', 'bhd', '1900',
+    lst_quay_place = ['xp', 'rạp', 'cgv', 'bhd', '1900',
                             'pub', 'bar', 'quẩy', 'xem phim', 'xphim'
                             ]
 
-    for i in lst_hang_loose_place:
+    for i in lst_quay_place:
         if i in message.lower():
             msg_rep = ['Học bài chưa thế cháu :)',
                        'Bao thì đi :)', 'Nhà mình nghèo lắm :)',
@@ -85,7 +85,7 @@ def rep_msg(message):
             return random.choice(msg_rep)
             break
 
-    lst_net_n_game = ['net', 'cz', 'fifa', 'lm', 'lmht', 'pubg',
+    lst_net_n_game = ['cz', 'fifa', 'pubg',
                       'battlefield', 'game', 'battle', 'làm ván'
                       ]
     for i in lst_net_n_game:
