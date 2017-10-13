@@ -1,4 +1,4 @@
 def login():
-    username = '' #fill = Facebook your clone account username 
-    password = '' #fill = Facebook your clone account password
+    username = '' #fill = your Facebook clone account name 
+    password = '' #fill = your Facebook clone account password
     return(username, password)

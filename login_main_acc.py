@@ -1,4 +1,4 @@
 def login():
-    username = '' #fill = Facebook your main account username 
-    password = '' #fill = Facebook your main account password
+    username = '' #fill = your Facebook main account name 
+    password = '' #fill = your Facebook main account password
     return (username, password)
