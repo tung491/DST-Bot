@@ -29,6 +29,8 @@ My Facebook Messages bot
    * Nick: tung491
    * DOB: 2001 Sep 4 :virgo: 
    * From: Hà Nội, Vietnam
+   * High school : Lê Quý Đôn- Đống Đa
+   * Graduated PYMI course 1706
    * Facebook: https://www.facebook.com/eocan2
    * Email: dosontung007@gmail.com
    * Github: https://github.com/dosontung007
