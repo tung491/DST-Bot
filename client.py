@@ -1,4 +1,4 @@
-import bot_rep
+import decline_invt
 import getlink
 import wish_id_user
 import bot_time_table
@@ -21,7 +21,7 @@ class Main_Bot(Client):
 
     def onMessage(self, author_id, thread_id, thread_type, message, **kwargs):
         if author_id != self.uid:
-            msg_rep = bot_rep.rep_msg(message)
+            msg_rep = decline_invt.rep_msg(message)
 
             if type(msg_rep) is str:
                 self.sendMessage(msg_rep,
@@ -194,14 +194,14 @@ class Clone_Bot(Client):
 
 
 def run_main_bot():
-    main_client = Main_Bot(login_main_acc.login()[0],
-                           login_main_acc.login()[1])
+    main_client = Main_Bot(login_main_acc.username,
+                           login_main_acc.password)
     main_client.listen()
 
 
 def run_clone_bot():
-    clone_client = Clone_Bot(login_clone_acc.login()[0],
-                             login_clone_acc.login()[1])
+    clone_client = Clone_Bot(login_clone_acc.user_name,
+                             login_clone_acc.password)
     clone_client.listen()
 
 
