@@ -183,13 +183,12 @@ class Clone_Bot(Client):
             if message == 'good night':
                 Main_Bot.good_night()
 
-            
             if 'tkb' in message or 'Thời khóa biểu' in message:
                 rep_message_ = bot_time_table.rep_message(message)
 
                 self.sendMessage(rep_message_,
-                                    thread_id=thread_id,
-                                    thread_type=thread_type)
+                                 thread_id=thread_id,
+                                 thread_type=thread_type)
 
 
 def run_main_bot():

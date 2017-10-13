@@ -11,18 +11,18 @@ My Facebook Messages bot
 ## [Clone Bot]
 * Send me 5 the most prominent posts(line 5-95 in getlink.py)
   + **Supported web**:
-    - [Tinh Tế](https://tinhte.vn/)
-    - [GenK](http://genk.vn/)
-    - [Kênh14](http://kenh14.vn/)
-    - [xkcd](https://xkcd.com/)
-    - [FAMILUG](http://www.familug.org/)
+    - [Tinh Tế](https://tinhte.vn/) (command call funtion: 'tinhte')
+    - [GenK](http://genk.vn/) (command call funtion: 'genk')
+    - [Kênh14](http://kenh14.vn/) (command call funtion: 'kenh14')
+    - [xkcd](https://xkcd.com/) (command call funtion: 'xkcd')
+    - [FAMILUG](http://www.familug.org/) (command call funtion: 'fml')
     - Updating...
 
-* Send me the smallest unsolved problem in [Project Euler](https://projecteuler.net/) (line 98-120 in getlink.py)
+* Send me the smallest unsolved problem in [Project Euler](https://projecteuler.net/) (line 98-120 in getlink.py) (command call funtion: 'pe')
 
-* Send me 5 the most prominent link in [pornohub.su](https://pornohub.su/) (line 123-140 in getlink.py)
+* Send me 5 the most prominent link in [pornohub.su](https://pornohub.su/) (line 123-140 in getlink.py) (command call funtion: 'pornhub')
 
-* Send me time table(All in bot_time_table.py)
+* Send me time table(All in bot_time_table.py) (command call funtion: 'tkb' or 'thời khóa biểu')
 
 
 ### Authors

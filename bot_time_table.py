@@ -84,7 +84,7 @@ def rep_message(message):
     lst_t6 = ['thứ 6', 't6']
     lst_t7 = ['thứ 7', 't7']
 
-    for i in lst_t2 :
+    for i in lst_t2:
         if i in message:
             time_table_ = time_table(1)
             has_been_returned = True

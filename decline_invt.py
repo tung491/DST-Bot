@@ -21,7 +21,7 @@ def rep_msg(message):
                       'khai trương', 'trà sữa', 'wang', 'xing', 'gong cha',
                       'chago'
                       ]
-    
+
     for i in lst_boba_place:
         if i in message.lower():
             msg_rep = ['Bao thì đi :)', 'Nhà mình nghèo lắm :)',
@@ -32,7 +32,7 @@ def rep_msg(message):
                        'M đừng tận thu tiền của t nữa :)',
                        'Tôi còn 10k :) \n và m đừng bảo t là 10k đủ r :)'
                        ]
-            
+
             return random.choice(msg_rep)
             break
 
@@ -47,7 +47,7 @@ def rep_msg(message):
                        'Tôi còn 10k :) \n và m đừng bảo t là 10k đủ r :)',
                        'Bm còng lưng đi làm. Uống cái gì ??? :)'
                        ]
-            
+
             return random.choice(msg_rep)
             break
 
@@ -66,13 +66,13 @@ def rep_msg(message):
                        'Bm còng lưng đi làm. Ăn cái gì ??? :)',
                        'Tôi còn 10k :) \n và m đừng bảo t là 10k đủ r :)'
                        ]
-            
+
             return random.choice(msg_rep)
             break
 
     lst_quay_place = ['xp', 'rạp', 'cgv', 'bhd', '1900',
-                            'pub', 'bar', 'quẩy', 'xem phim', 'xphim'
-                            ]
+                      'pub', 'bar', 'quẩy', 'xem phim', 'xphim'
+                      ]
 
     for i in lst_quay_place:
         if i in message.lower():
@@ -81,7 +81,7 @@ def rep_msg(message):
                        'Tôi còn 10k :) \n và m đừng bảo t là 10k đủ r :)',
                        'Bm còng lưng đi làm. Quẩy cái gì ??? :)'
                        ]
-            
+
             return random.choice(msg_rep)
             break
 
