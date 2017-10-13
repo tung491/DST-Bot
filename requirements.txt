@@ -1,3 +1,4 @@
 requests
 fbchat
 beautifulsoup4
+yaml

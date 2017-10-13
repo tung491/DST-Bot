@@ -9,7 +9,7 @@ My Facebook Messages bot
 * Send good night wish to the people who I want wish(list that people in wish_id_user.py)
 
 ## [Clone Bot]
-* Send me 5 the most prominent posts(line 5-95 in getlink.py)
+* Send me 5 the most prominent posts(funtion in getlink.py)
   + **Supported web**:
     - [Tinh Tế](https://tinhte.vn/) (command call funtion: 'tinhte')
     - [GenK](http://genk.vn/) (command call funtion: 'genk')
@@ -18,9 +18,9 @@ My Facebook Messages bot
     - [FAMILUG](http://www.familug.org/) (command call funtion: 'fml')
     - Updating...
 
-* Send me the smallest unsolved problem in [Project Euler](https://projecteuler.net/) (line 98-120 in getlink.py) (command call funtion: 'pe')
+* Send me the smallest unsolved problem in [Project Euler](https://projecteuler.net/) (funtion in getlink.py) (command call funtion: 'pe')
 
-* Send me 5 the most prominent link in [pornohub.su](https://pornohub.su/) (line 123-140 in getlink.py) (command call funtion: 'pornhub')
+* Send me 5 the most prominent link in [pornohub.su](https://pornohub.su/) (funtion in getlink.py) (command call funtion: 'pornhub')
 
 * Send me time table(All in bot_time_table.py) (command call funtion: 'tkb' or 'thời khóa biểu')
 
