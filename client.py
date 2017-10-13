@@ -12,23 +12,23 @@ import login_clone_acc
 
 
 class Main_Bot(Client):
-    def log(self, author_id, thread_id, thread_type, message, **kwargs):
-        report = '''{}
-                Message from {} in {} ({}): {}
-                '''.format(time.strftime("%a, %d %b %Y %H:%M:%S"),
-                           author_id, thread_id, thread_type.name, message)
-        log.info(report)
-
     def onMessage(self, author_id, thread_id, thread_type, message, **kwargs):
+        def log(self, author_id, thread_id, thread_type, message, **kwargs):
+        report = '''{}
+            Message from {} in {} ({}): {}
+            '''.format(time.strftime("%a, %d %b %Y %H:%M:%S"),
+                        author_id, thread_id, thread_type.name, message)
+            log.info(report)
         if author_id != self.uid and author_id != login_clone_acc.id_:
-            msg_rep = decline_invt.rep_msg(message)
+            if thread_type.name == 'USER':
+                msg_rep = decline_invt.rep_msg(message)
 
-            if type(msg_rep) is str:
-                self.sendMessage(msg_rep,
-                                 thread_id=thread_id,
-                                 thread_type=thread_type)
+                if type(msg_rep) is str:
+                    self.sendMessage(msg_rep,
+                                    thread_id=thread_id,
+                                    thread_type=thread_type)
 
-                log.info('Declined invitation from {}'.format(author_id))
+                    log.info('Declined invitation from {}'.format(author_id))
 
     def good_night(self):
         t0 = time.time()
@@ -57,14 +57,14 @@ class Main_Bot(Client):
 
 
 class Clone_Bot(Client):
-    def log(self, author_id, thread_id, thread_type, message, **kwargs):
-        report = '''{}
+    def onMessage(self, author_id, message, thread_id, thread_type, **kwargs):
+        def log(self, author_id, thread_id, thread_type, message, **kwargs):
+            report = '''{}
             Message from {} in {} ({}): {}
             '''.format(time.strftime("%a, %d %b %Y %H:%M:%S"),
                        author_id, thread_id, thread_type.name, message)
-        log.info(report)
+            log.info(report)
 
-    def onMessage(self, author_id, message, thread_id, thread_type, **kwargs):
         if author_id != self.uid:
             message = message.lower()
 
