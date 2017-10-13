@@ -42,7 +42,8 @@ def rep_msg(message):
                               ]
     for i in lst_orther_drink_place:
         if i in message.lower():
-x                       'Ví t nhẹ lắm r :)',
+            msg_rep = ['Bao thì đi :)', 'Nhà mình nghèo lắm :)',
+                       'Ví t nhẹ lắm r :)',
                        'Tôi còn 10k :) \n và m đừng bảo t là 10k đủ r :)',
                        'Bm còng lưng đi làm. Uống cái gì ??? :)'
                        ]
@@ -84,7 +85,7 @@ x                       'Ví t nhẹ lắm r :)',
             return random.choice(msg_rep)
             break
 
-    lst_net_n_game = ['cz', 'fifa', 'pubg',
+    lst_net_n_game = ['cz', 'fifa', 'pubg', 'net',
                       'battlefield', 'game', 'battle', 'làm ván'
                       ]
     for i in lst_net_n_game:
