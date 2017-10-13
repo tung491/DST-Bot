@@ -16,6 +16,7 @@ My Facebook Messages bot
     - [Kênh14](http://kenh14.vn/) (command call funtion: 'kenh14')
     - [xkcd](https://xkcd.com/) (command call funtion: 'xkcd')
     - [FAMILUG](http://www.familug.org/) (command call funtion: 'fml')
+    - [Vnexpress](https://vnexpress.net/) (command call funtion: 'vnex')
     - Updating...
 
 * Send me the smallest unsolved problem in [Project Euler](https://projecteuler.net/) (funtion in getlink.py) (command call funtion: 'pe')
@@ -24,6 +25,7 @@ My Facebook Messages bot
 
 * Send me time table(All in bot_time_table.py) (command call funtion: 'tkb' or 'thời khóa biểu')
 
+* Send me result [Viettlot](http://vietlott.vn/vi/) (command call funtion: 'viettlot')
 
 ### Authors
  ## Đỗ Sơn Tùng

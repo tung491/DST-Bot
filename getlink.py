@@ -136,3 +136,44 @@ def pornhub():
             url_src.append('https:' + b.find_all('img', src=True)[0]['src'])
 
     return title_n_link, url_src
+
+
+def vnexpress():
+    title_n_link = []
+    url_src = []
+    r = requests.get('https://vnexpress.net/')
+    soup = BeautifulSoup(r.text, 'html.parser')
+
+    x = soup.find_all('a', class_="thumb thumb_5x3")
+    for i in x[:5:]:
+        link = i['href']
+        title = i['title']
+        src = i.find_all('img')[0]['src']
+        title_n_link.append((title, link))
+        url_src.append(src)
+
+    return title_n_link, url_src
+
+
+def viettlot():
+    r = requests.get('http://vietlott.vn/vi/')
+    soup = BeautifulSoup(r.text, 'html.parser')
+
+    x = soup.find_all('ul', class_="result-number")
+    lst_num = x[0].get_text().split()
+
+    result_num = ''
+
+    for i in lst_num:
+        result_num += i + ' '
+
+    y = soup.find_all('td', class_="red")
+    jackpot_value = y[0].get_text()
+
+    z = soup.find_all('div', class_="lotto-result")
+    t = soup.find_all('div', class_="lotto-result")
+
+    content = z[0].find('h4').get_text() + '\n' + \
+        t[0].find_all('p', class_="time-result")[0].get_text()
+
+    return (content, result_num, jackpot_value)

@@ -190,6 +190,36 @@ class Clone_Bot(Client):
                                  thread_id=thread_id,
                                  thread_type=thread_type)
 
+            if message == 'viettlot':
+                data = getlink.viettlot()
+                rep_message_ = '{}. \n'.format(data[0]) + \
+                               'Số trúng Jackpot là {} \n'.format(data[1]) + \
+                               'Giá trị Jackpot là {}'.format(data[2])
+
+                self.sendMessage(rep_message_,
+                                 thread_id=thread_id,
+                                 thread_type=thread_type)
+
+            if message == 'vnex':
+                title_n_link, url_src = getlink.vnexpress()
+
+                self.sendMessage('5 bài viết nổi bật trên Vnexpress',
+                                 thread_id=thread_id,
+                                 thread_type=thread_type)
+
+                for i in range(5):
+                    self.sendMessage(title_n_link[i][0],
+                                     thread_id=thread_id,
+                                     thread_type=thread_type)
+
+                    self.sendRemoteImage(url_src[i],
+                                         thread_id=thread_id,
+                                         thread_type=thread_type)
+
+                    self.sendMessage(title_n_link[i][1],
+                                     thread_id=thread_id,
+                                     thread_type=thread_type)
+
 
 def run_main_bot():
     main_client = Main_Bot(login_main_acc.username,
