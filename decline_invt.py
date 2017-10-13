@@ -42,8 +42,7 @@ def rep_msg(message):
                               ]
     for i in lst_orther_drink_place:
         if i in message.lower():
-            msg_rep = ['Bao thì đi :)', 'Nhà mình nghèo lắm :)',
-                       'Ví t nhẹ lắm r :)',
+x                       'Ví t nhẹ lắm r :)',
                        'Tôi còn 10k :) \n và m đừng bảo t là 10k đủ r :)',
                        'Bm còng lưng đi làm. Uống cái gì ??? :)'
                        ]

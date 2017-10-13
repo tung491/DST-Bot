@@ -20,7 +20,7 @@ class Main_Bot(Client):
         log.info(report)
 
     def onMessage(self, author_id, thread_id, thread_type, message, **kwargs):
-        if author_id != self.uid:
+        if author_id != self.uid and author_id != login_clone_acc.id_:
             msg_rep = decline_invt.rep_msg(message)
 
             if type(msg_rep) is str:
