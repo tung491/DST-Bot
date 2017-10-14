@@ -5,6 +5,7 @@ import bot_time_table
 
 from threading import Thread
 from fbchat import log, Client
+from fbchat.models import ThreadType
 import time
 
 import login_main_acc
@@ -14,10 +15,12 @@ import login_clone_acc
 class Main_Bot(Client):
     def onMessage(self, author_id, thread_id, thread_type, message, **kwargs):
         def log(self, author_id, thread_id, thread_type, message, **kwargs):
-        report = '''{}
-            Message from {} in {} ({}): {}
-            '''.format(time.strftime("%a, %d %b %Y %H:%M:%S"),
-                        author_id, thread_id, thread_type.name, message)
+            report = '''{}
+                     Message from {} in {} ({}): {}
+                     '''.format(time.strftime("%a, %d %b %Y %H:%M:%S"),
+                                author_id, thread_id, thread_type.name,
+                                message)
+
             log.info(report)
         if author_id != self.uid and author_id != login_clone_acc.id_:
             if thread_type.name == 'USER':
@@ -25,8 +28,8 @@ class Main_Bot(Client):
 
                 if type(msg_rep) is str:
                     self.sendMessage(msg_rep,
-                                    thread_id=thread_id,
-                                    thread_type=thread_type)
+                                     thread_id=thread_id,
+                                     thread_type=thread_type)
 
                     log.info('Declined invitation from {}'.format(author_id))
 
