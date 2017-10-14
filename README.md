@@ -33,7 +33,7 @@ My Facebook Messages bot
    * DOB: 2001 Sep 4 :virgo: 
    * From: Hà Nội, Vietnam
    * High school : Lê Quý Đôn- Đống Đa
-   * Graduated PYMI course 1706
+   * Graduated [PYMI](http://pymi.vn/) course 1706
    * Facebook: https://www.facebook.com/eocan2
    * Email: dosontung007@gmail.com
    * Project Euler: https://projecteuler.net/profile/dosontung007.png
