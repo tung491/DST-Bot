@@ -46,7 +46,7 @@ most prominent posts(funtion in getlink.py)
 
 ### Authors
  ## Đỗ Sơn Tùng
-    * Nickname: tung491
+* Nickname: tung491
 * DOB: 2001 Sep 4 :virgo: 
 * From: Hà Nội, Vietnam
 * High school : Lê Quý Đôn- Đống Đa
