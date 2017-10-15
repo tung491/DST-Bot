@@ -223,6 +223,38 @@ class Clone_Bot(Client):
                                      thread_id=thread_id,
                                      thread_type=thread_type)
 
+            if message == 'weather':
+                data = getlink.openweathermap()
+
+                description = data['description']
+                humidity = data['humidity']
+                pressure = data['pressure']
+                temp = data['temp']
+                temp_max = data['temp_max']
+                temp_min = data['temp_min']
+                wind_speed = data['wind_speed']
+                wind_deg = data['wind_deg']
+
+                msg_rep = 'Trạng thái: {} \n' + \
+                          'Độ ẩm: {} % \n' + \
+                          'Áp suất: {} hPa \n' + \
+                          'Nhiệt độ: {} °C \n' + \
+                          'Nhiệt độ cao nhất: {} °C \n' + \
+                          'Nhiệt độ thấp nhất: {} °C \n' + \
+                          'Vận tốc gió: {} m/s \n' + \
+                          'Hưóng gió: {}°'
+
+                msg_rep = msg_rep.format(description, humidity, pressure,
+                                         temp, temp_max, temp_min, wind_speed,
+                                         wind_deg)
+
+                self.sendMessage('Thời tiết hiện tại ở Hà Nội',
+                                 thread_id=thread_id,
+                                 thread_type=thread_id)
+                self.sendMessage(msg_rep,
+                                 thread_id=thread_id,
+                                 thread_type=thread_id)
+
 
 def run_main_bot():
     main_client = Main_Bot(login_main_acc.username,

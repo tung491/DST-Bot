@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import openweathermap_token
 
 
 def tinhte():
@@ -177,3 +178,54 @@ def viettlot():
         t[0].find_all('p', class_="time-result")[0].get_text()
 
     return (content, result_num, jackpot_value)
+
+
+def openweathermap():
+    token = openweathermap_token.token
+    id_city = 1581129
+
+    api_url = 'http://api.openweathermap.org' \
+        '/data/2.5/weather?id={0}&APPID={1}'.format(id_city, token)
+
+    r = requests.get(api_url)
+
+    info = r.json()
+
+    description = info['weather'][0]['description']
+    humidity = info['main']['humidity']
+    pressure = info['main']['pressure']
+    temp = info['main']['temp'] - 273
+    temp_max = info['main']['temp_max'] - 273
+    temp_min = info['main']['temp_min'] - 273
+    wind_speed, wind_deg = info['wind']['speed'], info['wind']['deg']
+
+    data = {'description': description,
+            'pressure': pressure,
+            'humidity': humidity,
+            'temp': temp,
+            'temp_max': temp_max,
+            'temp_min': temp_min,
+            'wind_speed': wind_speed,
+            'wind_deg': wind_deg
+            }
+
+    return data
+
+
+def boba_place(msg):
+    link_page = ('https://maps.googleapis.com/maps/api/place/nearbysearch/json?'
+                 'location={},{}&radius'
+                 '=5000&keyword=teae&key={}')
+    
+    link_page_token = ('https://maps.googleapis.com/maps/api'
+                       '/place/nearbysearch/json?pagetoken={0}&key={1}')
+    
+    API_key = 'AIzaSyBHFBk7ycGOQ5vEKXCqgAq1BQfFoyS3Ep0'
+
+    g = geocoder.google(msg)
+    current_place = g.lat
+    current_place = g.lng
+
+    a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
+    c = 2 * asin(sqrt(a)) 
+    distance = 6367 * c

@@ -1,32 +1,31 @@
-Address,Name
-"123 Ô Chợ Dừa, Hà Nội, Vietnam",Regiustea
-"56 Lý Thường Kiệt, Trần Hưng Đạo, Hoàn Kiếm, Hà Nội, Vietnam",Gong Cha Lý Thường Kiệt
-"Tòa nhà D2 Giảng Võ, Quận Ba Đình, Hà Nội",Gong Cha Giảng Võ
-"187 Nguyễn Văn Cừ, Phường Ngọc Lâm, Quận Long Biên, Hà Nội",Gong Cha Nguyễn Văn Cừ - Long Biên
-"Park 3 – Park Hill, Khu đô thị Times City, P.Mai Động, Q.Hoàng Mai, Hà Nội",Gong Cha Times City
-"3 Hàng Cót, P.Hàng Mã, Q.Hoàn Kiếm, Hà Nội ",Gong Cha Hàng Cót
-"Lô T1.5, Tầng 1 Tòa nhà 34T, khu đô thị mới Trung Hòa, Nhân Chính, đường Hoàng Đạo Thúy, phường Trung Hòa, quận Cầu Giấy, Hà Nội",Gong Cha Hoàng Đạo Thúy
-"19 Thái Phiên, Lê Đại Hành, Hà Nội, Vietnam",Royal Tea Thái Phiên
-"16 Quang Trung, Trần Hưng Đạo, Hà Nội, Vietnam",Royal Tea Quang Trung
-"18 Ngô Quyền,Hoàn Kiếm, Hà Nội, Vietnam",Royal Tea Ngô Quyền
-"19B10 Phạm Ngọc Thạch, Đống Đa,  Hà Nội",Royal   Tea Phạm Ngọc Thạch
-"1 Phan Đình Phùng, Hàng Mã, Hà Nội, Vietnam",Royal Tea Phan Đình Phùng
-"Toà nhà Hồ Gươm Plaza, 110 Trần Phú, P. Mỗ Lao, Q. Hà Đông",Royal Tea Cơ Sở Trần Phú – Hà Đông
-"8 Ngô Quyền , Hoàn Kiếm , Hà Nội",Royal Tea Ngô Quyền
-"188 Cầu Giấy, Ngọc Khánh, Hà Nội, Vietnam",Royal Tea Cầu Giấy
-"165 Giảng Võ, Chợ Dừa, Hà Nội, Vietnam",Royal Tea Giảng Võ
-"2 Cửa Nam, Hoàn Kiếm, Hà Nội",Royal Tea Cửa Nam
-"64 Trần Đăng Ninh, Hà Nội",Royal Tea Trần Đăng Ninh
-"76 Đào Tấn, Cống Vị, Quận Ba Đình, Hà Nội",Royal Tea Đào Tấn
-"Tầng 1 TTTM Hồ Gươm Plaza, 110 Trần Phú, Mỗ Lao, Hà Đông, Hà Nội, Quận Hà Đông, Hà Nội",Royal Tea Trần Phú
-"5 Hàng Cá, Hà Nội",Royal Tea Hàng Cá
-"18 Ngô Quyền, Tràng Tiền, Quận Hoàn Kiếm, Hà Nội",Royal Tea Ngô Quyền
-"142 Vũ Phạm Hàm, Yên Hoà, Quận Cầu Giấy, Hà Nội",Royal Tea Vũ Phạm Hàm
-"105 Trần Duy Hưng, Hà Nội",Royal Tea Trần Duy Hưng
-"515 Nguyễn Trãi, Thanh Xuân Nam, Quận Thanh Xuân, Hà Nội",Royal Tea Nguyễn Trãi
-"23 Lê Đại Hành, Hai Bà Trưng",Dingtea Cơ sở 1
-"163 Giảng Võ, Đống Đa",Dingtea Cơ sở 2
-"47 Hàng Cót, Hoàn Kiếm",Dingtea Cơ sở 3
+"123 Ô Chợ Dừa, Hà Nội, Vietnam" : "Regiustea"
+"56 Lý Thường Kiệt, Trần Hưng Đạo, Hoàn Kiếm, Hà Nội, Vietnam" : "Gong Cha Lý Thường Kiệt"
+"Tòa nhà D2 Giảng Võ, Quận Ba Đình, Hà Nội" : "Gong Cha Giảng Võ"
+"187 Nguyễn Văn Cừ, Phường Ngọc Lâm, Quận Long Biên, Hà Nội" : "Gong Cha Nguyễn Văn Cừ - Long Biên"
+"Park 3 – Park Hill, Khu đô thị Times City, P.Mai Động, Q.Hoàng Mai, Hà Nội" : "Gong Cha Times City"
+"3 Hàng Cót, P.Hàng Mã, Q.Hoàn Kiếm, Hà Nội" : "Gong Cha Hàng Cót"
+"Lô T1.5, Tầng 1 Tòa nhà 34T, khu đô thị mới Trung Hòa, Nhân Chính, đường Hoàng Đạo Thúy, phường Trung Hòa, quận Cầu Giấy, Hà Nội" : "Gong Cha Hoàng Đạo Thúy"
+"19 Thái Phiên, Lê Đại Hành, Hà Nội, Vietnam" : "Royal Tea Thái Phiên"
+"16 Quang Trung, Trần Hưng Đạo, Hà Nội, Vietnam" : "Royal Tea Quang Trung"
+"18 Ngô Quyền,Hoàn Kiếm, Hà Nội, Vietnam" : "Royal Tea Ngô Quyền"
+"19B10 Phạm Ngọc Thạch, Đống Đa,  Hà Nội" : "Royal  Tea Phạm Ngọc Thạch"
+"1 Phan Đình Phùng, Hàng Mã, Hà Nội, Vietnam" : "Royal Tea Phan Đình Phùng"
+"Toà nhà Hồ Gươm Plaza, 110 Trần Phú, P. Mỗ Lao, Q. Hà Đông" : "Royal Tea Cơ Sở Trần Phú – Hà Đông"
+"8 Ngô Quyền , Hoàn Kiếm , Hà Nội" : "Royal Tea Ngô Quyền"
+"188 Cầu Giấy, Ngọc Khánh, Hà Nội, Vietnam" : "Royal Tea Cầu Giấy"
+"165 Giảng Võ, Chợ Dừa, Hà Nội, Vietnam" : "Royal Tea Giảng Võ"
+"2 Cửa Nam, Hoàn Kiếm, Hà Nội" : "Royal Tea Cửa Nam"
+"64 Trần Đăng Ninh, Hà Nội" : "Royal Tea Trần Đăng Ninh"
+"76 Đào Tấn, Cống Vị, Quận Ba Đình, Hà Nội" : "Royal Tea Đào Tấn"
+"Tầng 1 TTTM Hồ Gươm Plaza, 110 Trần Phú, Mỗ Lao, Hà Đông, Hà Nội, Quận Hà Đông, Hà Nội" : "Royal Tea Trần Phú"
+"5 Hàng Cá, Hà Nội" : "Royal Tea Hàng Cá"
+"18 Ngô Quyền, Tràng Tiền, Quận Hoàn Kiếm, Hà Nội" : "Royal Tea Ngô Quyền"
+"142 Vũ Phạm Hàm, Yên Hoà, Quận Cầu Giấy, Hà Nội" : "Royal Tea Vũ Phạm Hàm"
+"105 Trần Duy Hưng, Hà Nội" : "Royal Tea Trần Duy Hưng"
+"515 Nguyễn Trãi, Thanh Xuân Nam, Quận Thanh Xuân, Hà Nội" : "Royal Tea Nguyễn Trãi"
+"23 Lê Đại Hành, Hai Bà Trưng" : "Dingtea Cơ sở 1"
+"163 Giảng Võ, Đống Đa" : 'Dingtea Cơ sở 2'
+"47 Hàng Cót, Hoàn Kiếm",Dingtea Cơ sở 3'
 "180 Cầu Giấy, Cầu Giấy",Dingtea Cơ sở 4
 "102 Trần Duy Hưng, Cầu Giấy",Dingtea Cơ sở 5
 "1B Nguyễn Hữu Huân, Hoàn Kiếm",Dingtea Cơ sở 6
@@ -241,7 +240,7 @@ Số 8 Nguyễn Xiển – Thanh Xuân – Hà Nội,TocoToco - Nguyễn Xiển
 "147 Trần Đại Nghĩa, Hà Nội",Feelingtea Trần Đại Nghĩa
 "22 Khương Hạ, Hà Nội",Feelingtea Khương Hạ
 "162 Ngọc Lâm, Hà Nội",Feelingtea Ngọc Lâm
-"13 Lê Đại Hành, Hà Nội",Feelingtea Lê Đại Hành
+"13 Lê Đại Hành, Hà Nội    ",Feelingtea Lê Đại Hành
 "491 Kim Ngưu, Hà Nội",Feelingtea Kim Ngưu
 "68 Phùng Hưng, Hà Đông  ",Feelingtea Phùng Hưng
 "99 Xã Đàn, Hà Nội",Feelingtea Xã Đàn

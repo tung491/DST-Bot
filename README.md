@@ -27,6 +27,8 @@ My Facebook Messages bot
 
 * Send me result [Viettlot](http://vietlott.vn/vi/) (command call funtion: 'viettlot')
 
+* Send me the current weather in my city (Hanoi, Vietnam)(funtion in getlink.py) (command call funtion 'weather')
+
 ### Authors
  ## Đỗ Sơn Tùng
    * Nickname: tung491
