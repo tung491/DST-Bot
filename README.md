@@ -6,10 +6,17 @@ My Facebook Messages bot
 ## [Main Bot]
 * Declined invitation when I was received a invitation to eat, drink or play game(All in bot_rep.py)
 
+* Send good night wish to the people who I want wish(list that people in wish_id_user.py)* Declined invitation when I was received a invitation to eat, drink or play game(All in bot_rep.py)
+
+* Send good night wish to the people who I want wish(list that people in wish_id_user.py)
+ add update* Declined invitation when I was received a invitation to eat, drink or play game(All in bot_rep.py)
+
 * Send good night wish to the people who I want wish(list that people in wish_id_user.py)
 
+
+
 ## [Clone Bot]
-* Send me 5 the most prominent posts(funtion in getlink.py)
+most prominent posts(funtion in getlink.py)
   + **Supported web**:
     - [Tinh Tế](https://tinhte.vn/) (command call funtion: 'tinhte')
     - [GenK](http://genk.vn/) (command call funtion: 'genk')
@@ -29,15 +36,22 @@ My Facebook Messages bot
 
 * Send me the current weather in my city (Hanoi, Vietnam)(funtion in getlink.py) (command call funtion 'weather')
 
+* Update the README.md and up status in Facebook [COMING SOON]
+   Sample command:
+                  ```update
+                     bot clone: Remove pornhub() in getlink.py
+                     .....
+                  ```
+
+
 ### Authors
  ## Đỗ Sơn Tùng
-   * Nickname: tung491
-   * DOB: 2001 Sep 4 :virgo: 
-   * From: Hà Nội, Vietnam
-   * High school : Lê Quý Đôn- Đống Đa
-   * Graduated [PYMI](http://pymi.vn/) course 1706
-   * Facebook: https://www.facebook.com/eocan2
-   * Email: dosontung007@gmail.com
-   * Project Euler: https://projecteuler.net/profile/dosontung007.png
-   * Github: https://github.com/dosontung007
-
+    * Nickname: tung491
+* DOB: 2001 Sep 4 :virgo: 
+* From: Hà Nội, Vietnam
+* High school : Lê Quý Đôn- Đống Đa
+* Graduated [PYMI](http://pymi.vn/) course 1706
+* Facebook: https://www.facebook.com/eocan2
+* Email: dosontung007@gmail.com
+* Project Euler: https://projecteuler.net/profile/dosontung007.png
+* Github: https://github.com/dosontung007
