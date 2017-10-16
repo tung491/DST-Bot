@@ -16,7 +16,7 @@ My Facebook Messages bot
 
 
 ## [Clone Bot]
-most prominent posts(funtion in getlink.py)
+* Send me 5 the most prominent posts(funtion in getlink.py)
   + **Supported web**:
     - [Tinh Tế](https://tinhte.vn/) (command call funtion: 'tinhte')
     - [GenK](http://genk.vn/) (command call funtion: 'genk')
@@ -35,13 +35,6 @@ most prominent posts(funtion in getlink.py)
 * Send me result [Viettlot](http://vietlott.vn/vi/) (command call funtion: 'viettlot')
 
 * Send me the current weather in my city (Hanoi, Vietnam)(funtion in getlink.py) (command call funtion 'weather')
-
-* Update the README.md and up status in Facebook [COMING SOON]
-   Sample command:
-                  ```update
-                     bot clone: Remove pornhub() in getlink.py
-                     .....
-                  ```
 
 
 ### Authors

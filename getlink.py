@@ -210,22 +210,3 @@ def openweathermap():
             }
 
     return data
-
-
-def boba_place(msg):
-    link_page = ('https://maps.googleapis.com/maps/api/place/nearbysearch/json?'
-                 'location={},{}&radius'
-                 '=5000&keyword=teae&key={}')
-    
-    link_page_token = ('https://maps.googleapis.com/maps/api'
-                       '/place/nearbysearch/json?pagetoken={0}&key={1}')
-    
-    API_key = 'AIzaSyBHFBk7ycGOQ5vEKXCqgAq1BQfFoyS3Ep0'
-
-    g = geocoder.google(msg)
-    current_place = g.lat
-    current_place = g.lng
-
-    a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
-    c = 2 * asin(sqrt(a)) 
-    distance = 6367 * c

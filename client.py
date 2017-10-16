@@ -14,14 +14,14 @@ import login_clone_acc
 
 class Main_Bot(Client):
     def onMessage(self, author_id, thread_id, thread_type, message, **kwargs):
-        def log(self, author_id, thread_id, thread_type, message, **kwargs):
-            report = '''{}
-                     Message from {} in {} ({}): {}
-                     '''.format(time.strftime("%a, %d %b %Y %H:%M:%S"),
-                                author_id, thread_id, thread_type.name,
-                                message)
+        report = '''{}
+                    Message from {} in {} ({}): {}
+                    '''.format(time.strftime("%a, %d %b %Y %H:%M:%S"),
+                               author_id, thread_id, thread_type.name,
+                               message)
 
-            log.info(report)
+        log.info(report)
+
         if author_id != self.uid and author_id != login_clone_acc.id_:
             if thread_type.name == 'USER':
                 msg_rep = decline_invt.rep_msg(message)
@@ -61,12 +61,11 @@ class Main_Bot(Client):
 
 class Clone_Bot(Client):
     def onMessage(self, author_id, message, thread_id, thread_type, **kwargs):
-        def log(self, author_id, thread_id, thread_type, message, **kwargs):
-            report = '''{}
-            Message from {} in {} ({}): {}
-            '''.format(time.strftime("%a, %d %b %Y %H:%M:%S"),
-                       author_id, thread_id, thread_type.name, message)
-            log.info(report)
+        report = '''{}
+        Message from {} in {} ({}): {}
+        '''.format(time.strftime("%a, %d %b %Y %H:%M:%S"),
+                   author_id, thread_id, thread_type.name, message)
+        log.info(report)
 
         if author_id != self.uid:
             message = message.lower()
@@ -235,14 +234,16 @@ class Clone_Bot(Client):
                 wind_speed = data['wind_speed']
                 wind_deg = data['wind_deg']
 
-                msg_rep = 'Trạng thái: {} \n' + \
-                          'Độ ẩm: {} % \n' + \
-                          'Áp suất: {} hPa \n' + \
-                          'Nhiệt độ: {} °C \n' + \
-                          'Nhiệt độ cao nhất: {} °C \n' + \
-                          'Nhiệt độ thấp nhất: {} °C \n' + \
-                          'Vận tốc gió: {} m/s \n' + \
-                          'Hưóng gió: {}°'
+                msg_rep = '''
+                          Trạng thái: {}
+                          Độ ẩm: {} %
+                          Áp suất: {} hPa
+                          Nhiệt độ: {} °C
+                          Nhiệt độ cao nhất: {} °C
+                          Nhiệt độ thấp nhất: {} °C
+                          Vận tốc gió: {} m/s
+                          Hưóng gió: {}°
+                          '''
 
                 msg_rep = msg_rep.format(description, humidity, pressure,
                                          temp, temp_max, temp_min, wind_speed,
