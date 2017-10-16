@@ -3,10 +3,10 @@ import time
 
 def time_table(x):
     monday = [('7h-7h45', 'Chào cờ'),
-              ('7h55-8h40', 'Anh'),
-              ('8h45-9h30', 'Anh'),
-              ('9h35-10h20', 'Lý'),
-              ('10h25-11h10', 'Sử'),
+              ('7h55-8h40', 'Sử'),
+              ('8h45-9h30', 'Lí'),
+              ('9h35-10h20', 'Văn'),
+              ('10h25-11h10', 'Văn'),
               ('11h15-12h', 'Tin'),
               ('14h-15h30', 'Lý tăng cường'),
               ('15h45-17h15', 'Hóa tăng cường')
@@ -14,9 +14,9 @@ def time_table(x):
 
     tuesday = [('7h-7h45', 'Tin'),
                ('7h55-8h40', 'Toán'),
-               ('8h45-9h30', 'Toán'),
-               ('9h35-10h20', 'Hóa'),
-               ('10h25-11h10', 'GDCD'),
+               ('8h45-9h30', 'Hóa'),
+               ('9h35-10h20', 'GDCD'),
+               ('10h25-11h10', 'Anh'),
                ('14h-15h30', 'Toán tăng cường'),
                ('15h30-17h', 'Văn tăng cường')
                ]
@@ -26,27 +26,27 @@ def time_table(x):
                  ('8h45-9h30', 'Lý')
                  ]
 
-    thursday = [('7h-7h45', 'Văn'),
-                ('7h55-8h40', 'Văn'),
+    thursday = [('7h-7h45', 'Địa'),
+                ('7h55-8h40', 'Thể'),
                 ('8h45-9h30', 'Thể dục'),
-                ('9h35-10h20', 'Địa'),
+                ('9h35-10h20', 'Anh'),
                 ('10h25-11h10', 'Anh'),
                 ('14h-15h30', 'Lý tăng cường'),
                 ('15h45-17h15', 'Hóa tăng cường')
                 ]
 
-    friday = [('7h-7h45', 'Toán'),
-              ('7h55-8h40', 'Công nghệ'),
+    friday = [('7h-7h45', 'Công nghệ'),
+              ('7h55-8h40', 'Toán'),
               ('8h45-9h30', 'Tiếng anh TC'),
               ('9h35-10h20', 'Văn'),
               ('14h-15h30', 'Toán tăng cường'),
               ('15h30-17h', 'Tiếng Anh tăng cường')
               ]
 
-    saturday = [('7h-7h45', 'Thể dục'),
-                ('7h55-8h40', 'Sinh'),
+    saturday = [('7h-7h45', 'Toán'),
+                ('7h55-8h40', 'Toán'),
                 ('8h45-9h30', 'Lý'),
-                ('9h35-10h20', 'Toán'),
+                ('9h35-10h20', 'Sinh'),
                 ('10h25-11h10', 'Văn'),
                 ('11h15-12h', 'Sinh hoạt'),
                 ('13h30-15h', 'Học nghề')
