@@ -13,6 +13,8 @@ My Facebook Messages bot
 
 * Send good night wish to the people who I want wish(list that people in wish_id_user.py)
 
+* Decline invitation to play Ever Wing 
+
 
 
 ## [Clone Bot]
