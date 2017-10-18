@@ -47,7 +47,7 @@ My Facebook Messages bot
                    {update_content2} \n
                    ....
                    ```
-* Decline invitation to play Ever Wing()
+* Decline invitation to play Ever Wing
 
 
 ### Authors
