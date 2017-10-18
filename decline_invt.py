@@ -93,5 +93,5 @@ def rep_msg(message):
             return 'Học đi mà làm nguời. Suốt ngày game giếc :)'
             break
 
-    if message == '😇 or 😈':
+    if message == '😇 or 😈?':
         return 'Địt con mẹ mày, mời cái lồn'
