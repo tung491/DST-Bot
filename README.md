@@ -50,6 +50,16 @@ My Facebook Messages bot
 * Decline invitation to play Ever Wing
 
 
+#Usage
+- Fill in the empty string in login_clone_acc.py and login_main_acc.py
+
+- Custom the list user that you want wish good night and the wish in config.yaml
+
+- Run the command:
+  `pip3 install -r requirements.txt` 
+- Run the client.py in python3:
+  `python3 client.py`
+
 ### Authors
  ## Đỗ Sơn Tùng
 * Nickname: tung491
