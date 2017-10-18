@@ -1,7 +1,9 @@
 import decline_invt
-import getlink
+from getlink import (tinhte, fml, genk, kenh14, xkcd, PE,
+                     pornhub, vnexpress, viettlot, openweathermap)
 import wish_id_user
 import bot_time_table
+from update import post_update_status
 
 from threading import Thread
 from fbchat import log, Client
@@ -14,11 +16,11 @@ import login_clone_acc
 
 class Main_Bot(Client):
     def onMessage(self, author_id, thread_id, thread_type, message, **kwargs):
-        report = '''{}
-                    Message from {} in {} ({}): {}
-                    '''.format(time.strftime("%a, %d %b %Y %H:%M:%S"),
-                               author_id, thread_id, thread_type.name,
-                               message)
+        report = '''
+                 {}
+                 Message from {} in {} ({}): {}
+                 '''.format(time.strftime("%a, %d %b %Y %H:%M:%S"),
+                            author_id, thread_id, thread_type.name, message)
 
         log.info(report)
 
@@ -61,17 +63,18 @@ class Main_Bot(Client):
 
 class Clone_Bot(Client):
     def onMessage(self, author_id, message, thread_id, thread_type, **kwargs):
-        report = '''{}
-        Message from {} in {} ({}): {}
-        '''.format(time.strftime("%a, %d %b %Y %H:%M:%S"),
-                   author_id, thread_id, thread_type.name, message)
+        report = '''
+                 {}
+                 Message from {} in {} ({}): {}
+                 '''.format(time.strftime("%a, %d %b %Y %H:%M:%S"),
+                            author_id, thread_id, thread_type.name, message)
         log.info(report)
 
         if author_id != self.uid:
             message = message.lower()
 
             if message == 'tinhte':
-                title_n_link, url_src = getlink.tinhte()
+                title_n_link, url_src = tinhte()
                 self.sendMessage('5 bài nổi bật trên Tinhte.vn',
                                  thread_id=thread_id,
                                  thread_type=thread_type)
@@ -87,7 +90,7 @@ class Clone_Bot(Client):
                                      thread_type=thread_type)
 
             if message == 'pornhub':
-                title_n_link, url_src = getlink.pornhub()
+                title_n_link, url_src = pornhub()
                 self.sendMessage('5 bộ phim nổi bật trên pornohub.su',
                                  thread_id=thread_id,
                                  thread_type=thread_type)
@@ -105,7 +108,7 @@ class Clone_Bot(Client):
                                      thread_type=thread_type)
 
             if message == 'pe':
-                num_n_content = getlink.PE()
+                num_n_content = PE()
 
                 self.sendMessage('Problem ' + str(num_n_content[0]),
                                  thread_id=thread_id,
@@ -116,7 +119,7 @@ class Clone_Bot(Client):
                                  thread_type=thread_type)
 
             if message == 'fml':
-                title_n_link = getlink.fml()
+                title_n_link = fml()
                 msg_rep = str(title_n_link[0]) + '\n' + str(title_n_link[1])
 
                 self.sendMessage('Bài mới nhất trên FAMILUG',
@@ -127,7 +130,7 @@ class Clone_Bot(Client):
                                  thread_type=thread_type)
 
             if message == 'kenh14':
-                title_n_link, url_src = getlink.kenh14()
+                title_n_link, url_src = kenh14()
 
                 self.sendMessage('5 bài viết nổi bật trên kênh14',
                                  thread_id=thread_id,
@@ -147,7 +150,7 @@ class Clone_Bot(Client):
                                      thread_type=thread_type)
 
             if message == 'genk':
-                title_n_link, url_src = getlink.genk()
+                title_n_link, url_src = genk()
 
                 self.sendMessage('5 bài viết nổi bật trên Genk.vn',
                                  thread_id=thread_id,
@@ -167,7 +170,7 @@ class Clone_Bot(Client):
                                      thread_type=thread_type)
 
             if message == 'xkcd':
-                data = getlink.xkcd()
+                data = xkcd()
 
                 self.sendMessage('Bài viết mới nhất trên xkcd.com',
                                  thread_id=thread_id,
@@ -193,17 +196,19 @@ class Clone_Bot(Client):
                                  thread_type=thread_type)
 
             if message == 'viettlot':
-                data = getlink.viettlot()
-                rep_message_ = '{}. \n'.format(data[0]) + \
-                               'Số trúng Jackpot là {} \n'.format(data[1]) + \
-                               'Giá trị Jackpot là {}'.format(data[2])
+                data = viettlot()
+                rep_message_ = '''
+                               {}.
+                               Số trúng Jackpot là {}.
+                               Giá trị Jackpot là {}
+                               '''.format(data[0], data[1], data[2])
 
                 self.sendMessage(rep_message_,
                                  thread_id=thread_id,
                                  thread_type=thread_type)
 
             if message == 'vnex':
-                title_n_link, url_src = getlink.vnexpress()
+                title_n_link, url_src = vnexpress()
 
                 self.sendMessage('5 bài viết nổi bật trên Vnexpress',
                                  thread_id=thread_id,
@@ -223,7 +228,7 @@ class Clone_Bot(Client):
                                      thread_type=thread_type)
 
             if message == 'weather':
-                data = getlink.openweathermap()
+                data = openweathermap()
 
                 description = data['description']
                 humidity = data['humidity']
@@ -255,6 +260,9 @@ class Clone_Bot(Client):
                 self.sendMessage(msg_rep,
                                  thread_id=thread_id,
                                  thread_type=thread_id)
+
+            if 'update' in message:
+                post_update_status(message)
 
 
 def run_main_bot():

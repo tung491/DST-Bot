@@ -2,3 +2,4 @@ requests
 fbchat
 beautifulsoup4
 pyyaml
+facebook-sdk

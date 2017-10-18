@@ -9,11 +9,10 @@ My Facebook Messages bot
 * Send good night wish to the people who I want wish(list that people in wish_id_user.py)* Declined invitation when I was received a invitation to eat, drink or play game(All in bot_rep.py)
 
 * Send good night wish to the people who I want wish(list that people in wish_id_user.py)
- add update* Declined invitation when I was received a invitation to eat, drink or play game(All in bot_rep.py)
+
+* Declined invitation when I was received a invitation to eat, drink or play game(All in bot_rep.py)
 
 * Send good night wish to the people who I want wish(list that people in wish_id_user.py)
-
-* Decline invitation to play Ever Wing 
 
 
 
@@ -37,6 +36,16 @@ My Facebook Messages bot
 * Send me result [Viettlot](http://vietlott.vn/vi/) (command call funtion: 'viettlot')
 
 * Send me the current weather in my city (Hanoi, Vietnam)(funtion in getlink.py) (command call funtion 'weather')
+
+* Post a post in your facebook wall notice that What's new in your GitHub project(funtion in update.py)
+  - Format command:
+                   ```
+                   update
+                   {update_content1}
+                   {update_content2}
+                   ....
+                   ```
+* Decline invitation to play Ever Wing()
 
 
 ### Authors

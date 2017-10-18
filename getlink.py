@@ -4,13 +4,14 @@ import openweathermap_token
 
 
 def tinhte():
+    CRAWL_LINK = 'https://tinhte.vn/'
+    title_n_link = []
     url_src = []
-    r = requests.get('https://tinhte.vn/')
 
+    r = requests.get(CRAWL_LINK)
     soup = BeautifulSoup(r.text, 'html.parser')
 
     a = soup.find_all("div", class_="thread-title width-narrow")
-    title_n_link = []
 
     for i in a[:5:]:
         for n in i.find_all('a', href=True):
@@ -26,8 +27,9 @@ def tinhte():
 
 
 def fml():
-    r = requests.get('http://www.familug.org/')
+    CRAWL_LINK = 'http://www.familug.org/'
 
+    r = requests.get(CRAWL_LINK)
     soup = BeautifulSoup(r.text, 'html.parser')
 
     x = soup.find_all('h3', class_="post-title entry-title")
@@ -39,11 +41,11 @@ def fml():
 
 
 def genk():
+    CRAWL_LINK = 'http://genk.vn/'
     title_n_link = []
     url_src = []
 
-    r = requests.get('http://genk.vn/')
-
+    r = requests.get(CRAWL_LINK)
     soup = BeautifulSoup(r.text, 'html.parser')
 
     a = soup.find_all('a', href=True, title=True,
@@ -54,7 +56,7 @@ def genk():
                       class_="klwfnswn-thumb knswa_border")
 
     for i in a + b + c:
-        link = 'http://genk.vn' + i['href']
+        link = CRAWL_LINK + i['href']
         title = i['title']
         title_n_link.append((title, link))
         url_src.append(i.find_all('img', src=True)[0]['src'])
@@ -63,26 +65,29 @@ def genk():
 
 
 def kenh14():
+    CRAWL_LINK = 'http://kenh14.vn/'
+
     title_n_link = []
     url_src = []
 
-    r = requests.get('http://kenh14.vn/')
-
+    r = requests.get(CRAWL_LINK)
     soup = BeautifulSoup(r.text, 'html.parser')
+
     x = soup.find_all('a', class_="klwfnl-thumb", title=True, href=True)
     y = soup.find_all('a', class_="klwfnr-thumb", title=True, href=True)
     z = soup.find_all('a', class_="klwfnswn-thumb", title=True, href=True)
 
     for i in x + y + z:
         title = i['title']
-        link = 'http://kenh14.vn' + i['href']
+        link = CRAWL_LINK + i['href']
         title_n_link.append((title, link))
         url_src.append(i.find_all('img', src=True)[0]['src'])
 
 
 def xkcd():
-    r = requests.get('https://xkcd.com/')
+    CRAWL_LINK = 'https://xkcd.com/'
 
+    r = requests.get(CRAWL_LINK)
     soup = BeautifulSoup(r.text, 'html.parser')
 
     x = soup.find_all('img', alt=True, src=True, title=True)[0]
@@ -95,6 +100,8 @@ def xkcd():
 
 
 def PE():
+    CRAWL_LINK = 'https://projecteuler.net/problem={}'
+    content = ''
     sovled = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
               19, 20, 21, 22, 24, 25, 28, 29, 30, 31, 34, 35, 36, 48, 52, 56,
               67]
@@ -106,12 +113,10 @@ def PE():
     un_solved = problem
     num = un_solved[0]
 
-    r = requests.get('https://projecteuler.net/problem={}'.format(num))
+    r = requests.get(CRAWL_LINK.format(num))
     soup = BeautifulSoup(r.text, 'html.parser')
 
     x = soup.find_all("div", class_="problem_content")
-
-    content = ''
 
     for i in x:
         content += i.get_text()
@@ -120,11 +125,11 @@ def PE():
 
 
 def pornhub():
-    r = requests.get('https://pornohub.su/')
-
+    CRAWL_LINK = 'https://pornohub.su/'
     title_n_link = []
     url_src = []
 
+    r = requests.get(CRAWL_LINK)
     soup = BeautifulSoup(r.text, 'html.parser')
 
     x = soup.find_all("div", class_="td-module-thumb")
@@ -140,9 +145,11 @@ def pornhub():
 
 
 def vnexpress():
+    CRAWL_LINK = 'https://vnexpress.net/'
     title_n_link = []
     url_src = []
-    r = requests.get('https://vnexpress.net/')
+
+    r = requests.get(CRAWL_LINK)
     soup = BeautifulSoup(r.text, 'html.parser')
 
     x = soup.find_all('a', class_="thumb thumb_5x3")
@@ -157,13 +164,14 @@ def vnexpress():
 
 
 def viettlot():
-    r = requests.get('http://vietlott.vn/vi/')
+    CRAWL_LINK = 'http://vietlott.vn/vi/'
+    result_num = ''
+
+    r = requests.get(CRAWL_LINK)
     soup = BeautifulSoup(r.text, 'html.parser')
 
     x = soup.find_all('ul', class_="result-number")
     lst_num = x[0].get_text().split()
-
-    result_num = ''
 
     for i in lst_num:
         result_num += i + ' '
@@ -183,12 +191,10 @@ def viettlot():
 def openweathermap():
     token = openweathermap_token.token
     id_city = 1581129
-
-    api_url = 'http://api.openweathermap.org' \
+    API_URL = 'http://api.openweathermap.org' \
         '/data/2.5/weather?id={0}&APPID={1}'.format(id_city, token)
 
-    r = requests.get(api_url)
-
+    r = requests.get(API_URL)
     info = r.json()
 
     description = info['weather'][0]['description']
