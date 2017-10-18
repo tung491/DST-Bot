@@ -55,7 +55,7 @@ My Facebook Messages bot
 
 - Custom the list user that you want wish good night and the wish in config.yaml
 
-- Run the command:
+- Run the command to install requirements:
   `pip3 install -r requirements.txt` 
 - Run the client.py in python3:
   `python3 client.py`
