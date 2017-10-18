@@ -41,11 +41,11 @@ My Facebook Messages bot
 
 * Post a post in your facebook wall notice that What's new in your GitHub project(funtion in update.py)
   - Format command:
-                   ```update
-                   {update_content1}
-                   {update_content2}
-                   ....
-                   ```
+  ```update
+  {update_content1}
+  {update_content2}
+  ....
+  ```
 * Decline invitation to play Ever Wing
 
 
