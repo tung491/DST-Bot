@@ -1,11 +1,13 @@
-regiustea:
+group1:
        '100003752803370': 'Phạm Trà Myy'
        '100020962254247': 'Đào Xuân Thắng'
        '100002907474039': 'Hoàng Sơn'
        '100006117664625': 'Dung Dinh'
        '100001300342349': 'Thuỷ Tiên'
 
-Pymi:         
+group1_wish: 'Cảm ơn team Regiustea đã pha những cốc trà ngon cho mọi người \n Chúc ngủ ngon, {} ^^ <3'
+                
+group2:         
        '1350061339': 'Nguyễn Việt Hưng'
        '100004012855036': 'Quang Pham'
        '100003101554132': 'Bùi Yếnmf'
@@ -14,7 +16,9 @@ Pymi:
        '100003697142684': 'Nguyễn Đắc Toàn'
        '100004213744329': 'Phan Hoàng'
 
-11A5:
+group2_wish: 'Chúc mọi người trong team PYMI ngủ ngon, {}.\n Con bot này được viết bằng Python ^^ <3' 
+
+group3:
        '100004182042728': 'Đỗ Thanh Tùng'
        '100007870421580': 'Nguyễn Tuấn Mạnh'
        '100001652886761': 'Phạm Minh Đức'
@@ -36,7 +40,9 @@ Pymi:
        '100009494456827': 'Triệu An Nhiên'
        '100005466755731': 'Đức Minh'
 
-9C:
+group3_wish: 'Chúc anh em trong 11A5 ngủ ngon,{} <3'
+
+group4:
        '100009463507727': 'Nghĩa Trọng'
        '100006552784591': 'Hoàng Quốc Thịnh'
        '100005551656027': 'Anh Quang Nguyễn'
@@ -48,7 +54,9 @@ Pymi:
        '100006530978709': 'Nguyễn Thành Công'
        '100004010484055': 'Anh Bin Anh'
 
-GHC:
+group4_wish: 'Chúc anh em trong team 9c ngủ ngon,{}'
+
+group5:
        '100006463726982': 'Duy Đức'
        '100000149884733': 'Trường Nguyễn'
        '100004219033277': 'Nguyễn Nhật Huy'
@@ -61,3 +69,5 @@ GHC:
        '100005499785143': 'Duy Hiếu Lê'
        '100005920413349': 'Chu Duy Khánh'
        '100006853446909': 'Viet Nguyen Khoi Nguyen'
+
+group5_wish: 'Chúc các bro trong GHC ngủ ngon, {}'
