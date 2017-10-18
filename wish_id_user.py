@@ -18,7 +18,7 @@ def wish_id_user():
     # .......
     # group-n = data[key[n - 1]]
 
-    return group1, wish_group, group2, group3, group4, group5  # ...,group-n
+    return group1, group2, group3, group4, group5  # ...,group-n
 
 
 def choose_wish():
