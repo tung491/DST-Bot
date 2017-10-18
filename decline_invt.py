@@ -5,7 +5,7 @@ def rep_msg(message):
     lst_regiustea = ['regiustea', 'regius', 'rì', 'zớt', 'rớt']
 
     for i in lst_regiustea:
-        if i in message.lower():
+        if i in message:
             msg_rep = ['Bao thì đi :)', 'Nhà mình nghèo lắm :)',
                        'Ví t nhẹ lắm r :)',
                        'M đừng tận thu tiền của t nữa :)',
@@ -23,7 +23,7 @@ def rep_msg(message):
                       ]
 
     for i in lst_boba_place:
-        if i in message.lower():
+        if i in message:
             msg_rep = ['Bao thì đi :)', 'Nhà mình nghèo lắm :)',
                        'Bm còng lưng đi làm. Uống cái gì ??? :)',
                        'Tôi còn 10k :)',
@@ -41,7 +41,7 @@ def rep_msg(message):
                               'trà', 'uống', 'bia', 'rượu', 'sữa'
                               ]
     for i in lst_orther_drink_place:
-        if i in message.lower():
+        if i in message:
             msg_rep = ['Bao thì đi :)', 'Nhà mình nghèo lắm :)',
                        'Ví t nhẹ lắm r :)',
                        'Tôi còn 10k :) \n và m đừng bảo t là 10k đủ r :)',
@@ -61,7 +61,7 @@ def rep_msg(message):
                       ]
 
     for i in lst_food_place:
-        if i in message.lower():
+        if i in message:
             msg_rep = ['Bao thì đi :)', 'Nhà mình nghèo lắm :)',
                        'Bm còng lưng đi làm. Ăn cái gì ??? :)',
                        'Tôi còn 10k :) \n và m đừng bảo t là 10k đủ r :)'
@@ -75,7 +75,7 @@ def rep_msg(message):
                       ]
 
     for i in lst_quay_place:
-        if i in message.lower():
+        if i in message:
             msg_rep = ['Học bài chưa thế cháu :)',
                        'Bao thì đi :)', 'Nhà mình nghèo lắm :)',
                        'Tôi còn 10k :) \n và m đừng bảo t là 10k đủ r :)',
@@ -89,6 +89,9 @@ def rep_msg(message):
                       'battlefield', 'game', 'battle', 'làm ván'
                       ]
     for i in lst_net_n_game:
-        if i in message.lower():
+        if i in message:
             return 'Học đi mà làm nguời. Suốt ngày game giếc :)'
             break
+
+    if message == '😇 or 😈':
+        return 'Địt con mẹ mày, mời cái lồn'
