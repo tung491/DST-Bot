@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-import openweathermap_token
+import os
 
 
 def tinhte():
@@ -189,7 +189,7 @@ def viettlot():
 
 
 def openweathermap():
-    token = openweathermap_token.token
+    token = os.getenv('WEATHER_TOKEN')
     id_city = 1581129
     API_URL = 'http://api.openweathermap.org' \
         '/data/2.5/weather?id={0}&APPID={1}'.format(id_city, token)
@@ -203,7 +203,6 @@ def openweathermap():
     temp = info['main']['temp'] - 273
     temp_max = info['main']['temp_max'] - 273
     temp_min = info['main']['temp_min'] - 273
-    wind_speed, wind_deg = info['wind']['speed'], info['wind']['deg']
 
     data = {'description': description,
             'pressure': pressure,
@@ -211,8 +210,6 @@ def openweathermap():
             'temp': temp,
             'temp_max': temp_max,
             'temp_min': temp_min,
-            'wind_speed': wind_speed,
-            'wind_deg': wind_deg
             }
 
     return data
