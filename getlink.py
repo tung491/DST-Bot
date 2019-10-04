@@ -1,14 +1,14 @@
-import requests
-from bs4 import BeautifulSoup
+from requests_html import HTMLSession
 import os
 
+session = HTMLSession()
 
 def tinhte():
     CRAWL_LINK = 'https://tinhte.vn/'
     title_n_link = []
     url_src = []
 
-    r = requests.get(CRAWL_LINK)
+    r = session.get(CRAWL_LINK)
     soup = BeautifulSoup(r.text, 'html.parser')
 
     a = soup.find_all("div", class_="thread-title width-narrow")
@@ -29,7 +29,7 @@ def tinhte():
 def fml():
     CRAWL_LINK = 'http://www.familug.org/'
 
-    r = requests.get(CRAWL_LINK)
+    r = session.get(CRAWL_LINK)
     soup = BeautifulSoup(r.text, 'html.parser')
 
     x = soup.find_all('h3', class_="post-title entry-title")
@@ -45,7 +45,7 @@ def genk():
     title_n_link = []
     url_src = []
 
-    r = requests.get(CRAWL_LINK)
+    r = session.get(CRAWL_LINK)
     soup = BeautifulSoup(r.text, 'html.parser')
 
     a = soup.find_all('a', href=True, title=True,
@@ -87,7 +87,7 @@ def kenh14():
 def xkcd():
     CRAWL_LINK = 'https://xkcd.com/'
 
-    r = requests.get(CRAWL_LINK)
+    r = session.get(CRAWL_LINK)
     soup = BeautifulSoup(r.text, 'html.parser')
 
     x = soup.find_all('img', alt=True, src=True, title=True)[0]
@@ -113,7 +113,7 @@ def PE():
     un_solved = problem
     num = un_solved[0]
 
-    r = requests.get(CRAWL_LINK.format(num))
+    r = session.get(CRAWL_LINK.format(num))
     soup = BeautifulSoup(r.text, 'html.parser')
 
     x = soup.find_all("div", class_="problem_content")
@@ -129,7 +129,7 @@ def pornhub():
     title_n_link = []
     url_src = []
 
-    r = requests.get(CRAWL_LINK)
+    r = session.get(CRAWL_LINK)
     soup = BeautifulSoup(r.text, 'html.parser')
 
     x = soup.find_all("div", class_="td-module-thumb")
@@ -149,7 +149,7 @@ def vnexpress():
     title_n_link = []
     url_src = []
 
-    r = requests.get(CRAWL_LINK)
+    r = session.get(CRAWL_LINK)
     soup = BeautifulSoup(r.text, 'html.parser')
 
     x = soup.find_all('a', class_="thumb thumb_5x3")
@@ -167,7 +167,7 @@ def viettlot():
     CRAWL_LINK = 'http://vietlott.vn/vi/'
     result_num = ''
 
-    r = requests.get(CRAWL_LINK)
+    r = session.get(CRAWL_LINK)
     soup = BeautifulSoup(r.text, 'html.parser')
 
     x = soup.find_all('ul', class_="result-number")
@@ -194,7 +194,7 @@ def openweathermap():
     API_URL = 'http://api.openweathermap.org' \
         '/data/2.5/weather?id={0}&APPID={1}'.format(id_city, token)
 
-    r = requests.get(API_URL)
+    r = session.get(API_URL)
     info = r.json()
 
     description = info['weather'][0]['description']
