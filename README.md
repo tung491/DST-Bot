@@ -30,7 +30,7 @@ My Facebook Messages bot
 
 * Send me the smallest unsolved problem in [Project Euler](https://projecteuler.net/) (funtion in getlink.py) (command call funtion: 'pe')
 
-* Send me 5 the most prominent link in [pornohub.su](https://pornohub.su/) (funtion in getlink.py) (command call funtion: 'pornhub')
+* Send me 5 the most popular porn link in [pornohub.su](https://pornohub.su/) (funtion in getlink.py) (command call funtion: 'pornhub')
 
 * Send me time table(All in bot_time_table.py) (command call funtion: 'tkb' or 'thời khóa biểu')
 
